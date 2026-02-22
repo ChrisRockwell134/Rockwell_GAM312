@@ -98,14 +98,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UPlayerWidget* playerUI;
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite)
-			UObjectiveWidget* objWidget;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UObjectiveWidget* objWidget;
 
-		UPROPERTY()
-			float objectsBuilt;
+	UPROPERTY()
+		float objectsBuilt;
 
-		UPROPERTY()
-			float matsCollected;
+	UPROPERTY()
+		float matsCollected;
 
 	UFUNCTION(BlueprintCallable)
 		void SetHealth(float amount);
