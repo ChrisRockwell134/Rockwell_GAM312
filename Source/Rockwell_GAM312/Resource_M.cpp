@@ -9,11 +9,16 @@ AResource_M::AResource_M()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Text render of resources name
 	ResourceNameTxt = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Text Render"));
+	
+	// Static mesh component
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 
+	// Set mesh as root component
 	RootComponent = Mesh;
 
+	// Attach text to mesh
 	ResourceNameTxt->SetupAttachment(Mesh);
 }
 
